@@ -3,12 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shoes Store</title>
   </head>
   <body>
-    <div class="container">
-      <img src="afterr.png" alt="Gambar Asli" />
-    </div>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img src="web-logo.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="login.html">LOGIN</a>
+          <a href="login.html">REGISTER</a>
+          <a href="">ABOUT</a>
+          <a href="">TRACKING</a>
+          <a href="">CONTACT</a>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="content">
+        <div class="main-content">
+          <h1 data-aos="fade-right" data-aos-duration="2000">SHOESHIE</h1>
+          <!-- <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Air Max Plus</h2> -->
+          <h4
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="400"
+          >
+            Jasa Cuci Sepatu
+          </h4>
+          <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">
+            tes, ini paragraph website e
+          </p>
+          <div class="order">
+            <h3
+              data-aos="zoom-in-right"
+              data-aos-duration="2000"
+              data-aos-delay="800"
+            >
+              Start From Rp20.000
+            </h3>
+            <button
+              class="tombol"
+              onclick="window.location.href='login.html'"
+              data-aos="zoom-in-left"
+              data-aos-duration="2000"
+              data-aos-delay="800"
+            >
+              PESAN SEKARANG
+            </button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="after.png" data-aos="zoom-in" data-aos-duration="2000" />
+        </div>
+        <!-- <div class="image-after">
+          <img src="after.png" data-aos="zoom-in" data-aos-duration="2000" />
+        </div> -->
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
   </body>
 </html>
