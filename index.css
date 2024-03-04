@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    width: 200px; /* Sesuaikan lebar dan tinggi sesuai kebutuhan */
+    height: 400px;
+    overflow: visible
+  }
+  
+  .container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .container::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 400px;
+    background-image: url('before.png'); /* Ganti dengan URL gambar yang diinginkan */
+    background-size: cover;
+
+    transition: opacity 0.3s ease; /* Efek transisi saat hover */
+  }
+  
+  .container:hover::before {
+    opacity: 0; /* Menghilangkan gambar before saat hover */
+  }
+  
